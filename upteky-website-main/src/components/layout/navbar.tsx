@@ -100,11 +100,11 @@ export function Navbar() {
                     )}
                   />
                 </Link>
-                
+
                 {item.href === "/solution" && (
                   <div className="fixed inset-x-0 top-16 py-10 hidden group-hover:block w-screen rounded-b-2xl bg-[#212529] shadow-xl border-t border-border z-40">
                     <div className="mx-auto w-full max-w-screen-2xl px-4 sm:px-6 md:px-8 lg:px-20 py-12">
-                       {/* Mega menu content... */}
+                      {/* Mega menu content... */}
                       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-8 lg:gap-x-8 text-sm">
                         <div className="py-4 lg:py-0 lg:px-4 border-b sm:border-b-0 lg:border-b-0 lg:border-r border-white/10">
                           <h4 className="pb-4 text-white font-semibold text-base"><Link href="/conversational-agents" className="hover:text-accent transition-colors">Conversational Agents</Link></h4>
@@ -152,16 +152,16 @@ export function Navbar() {
 
           {/* Desktop CTA - Style Restored */}
           <div className="hidden lg:flex items-center justify-end mr-1">
-          <Button
-  className="bg-transparent border border-accent text-white rounded-full px-6 py-2.5 text-base font-outfit 
+            <Button
+              className="bg-transparent border border-accent text-white rounded-full px-6 py-2.5 text-base font-outfit 
              transition-all duration-300
              hover:bg-gradient-to-r hover:from-[#F58F1D] hover:to-[#E57D77]"
-  asChild
->
-  <Link href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0Hf-bvSzm-R79180oE1OQfbfQZI_QdfANF-hMCMk0U7i5xALnGlP0GS4vtFsky9z28D5zgGTsT">
-    Let's Tech Talk
-  </Link>
-</Button>
+              asChild
+            >
+              <Link href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0Hf-bvSzm-R79180oE1OQfbfQZI_QdfANF-hMCMk0U7i5xALnGlP0GS4vtFsky9z28D5zgGTsT">
+                Let's Tech Talk
+              </Link>
+            </Button>
 
           </div>
 
@@ -193,14 +193,14 @@ export function Navbar() {
                                 className="flex items-center justify-between w-full px-3 py-2 text-base font-medium text-foreground hover:text-primary transition-colors"
                               >
                                 <span>Solutions</span>
-                                <ChevronRight 
+                                <ChevronRight
                                   className={cn(
                                     "h-4 w-4 transition-transform duration-200",
                                     mobileSolutionsOpen && "rotate-90"
                                   )}
                                 />
                               </button>
-                              
+
                               {/* Solutions Dropdown */}
                               <div className={cn(
                                 "overflow-hidden transition-all duration-300 ease-in-out",
